@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+/* || RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* || VARIABLES */
+:root {
+  --BGCOLOR: hsl(27, 66%, 92%);
+  --HEADER-BGCOLOR: hsl(10, 79%, 65%);
+  --MAIN-BGCOLOR: hsl(33, 100%, 98%);
+  --CHART-BGCOLR1: hsl(10, 79%, 65%);
+  --CHART-BGCOLR2: hsl(186, 34%, 60%);
+
+  /* TEXT COLORS */
+  --DARK-TEXTCOLOR: hsl(25, 47%, 15%);
+  --GRAY-TEXTCOLOR: hsl(28, 10%, 53%);
+  --WHITE-TEXTCOLOR: hsl(0, 0%, 100%);
+}
+
+/* || GENERAL STYLES */
+body {
+  font-size: clamp(15px, 4vw, 18px);
+  font-family: "DM Sans", serif;
+  background-color: var(--BGCOLOR);
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  white-space: nowrap;
+}
+
+.main-header {
+  background-color: var(--HEADER-BGCOLOR);
+  padding: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  color: var(--WHITE-TEXTCOLOR);
+  margin-bottom: 1rem;
+}
+
+.main-header,
+.main-body {
+  width: clamp(300px, 30vw, 350px);
+  height: auto;
+  border-radius: 0.6rem;
+}
+
+.main-header img {
+  max-width: 50%;
+  margin-left: 3rem;
+}
+
+.main-header-balance p:nth-child(2) {
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.main-header-balance p {
+  font-size: 13px;
+}
+
+.main-body {
+  background-color: var(--MAIN-BGCOLOR);
+  padding: 1.6rem 1rem;
+}
+
+.main-expense-chart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  gap: 0.3rem;
+  margin: 2.5rem 0 1rem 0;
+}
+
+.expense-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.expense-chart p {
+  text-align: center;
+  margin-top: 0.4rem;
+  font-size: 11px;
+  color: var(--GRAY-TEXTCOLOR);
+}
+
+.chart {
+  width: clamp(30px, 4vw, 35px);
+  background-color: var(--CHART-BGCOLR1);
+  border-radius: 0.2em;
+}
+
+.chart:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.chart1 {
+  height: 40px;
+}
+
+.chart2 {
+  height: 70px;
+}
+
+.chart3 {
+  height: 100px;
+  background-color: var(--CHART-BGCOLR2);
+}
+
+.chart4 {
+  height: 60px;
+}
+
+.chart5 {
+  height: 45px;
+}
+
+.chart6 {
+  height: 80px;
+}
+
+.chart7 {
+  height: 50px;
+}
+
+.chart-hover {
+  display: none;
+  width: 45px;
+  height: 26px;
+  background-color: var(--DARK-TEXTCOLOR);
+  margin-bottom: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.chart-hover p {
+  color: var(--WHITE-TEXTCOLOR);
+  text-align: center;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+hr {
+  outline: none;
+  border: 1px solid hsla(28, 10%, 53%, 0.144);
+  margin-bottom: 1.2rem;
+}
+
+.main-total {
+  font-size: 13px;
+}
+
+#text {
+  color: var(--GRAY-TEXTCOLOR);
+}
+
+.total-class {
+  font-weight: 400;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer p:nth-child(1),
+#total-cash {
+  font-weight: 700;
+}
+
+#total-cash {
+  font-size: 27px;
+}
