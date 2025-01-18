@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
-- Live Site URL: [Live Site URL](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://github.com/victoriatuady/Expense-Chart.git)
+- Live Site URL: [Live Site URL](https://victoriatuady.github.io/Expense-Chart/)
 
 ## My process
 
