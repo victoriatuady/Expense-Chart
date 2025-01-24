@@ -108,6 +108,7 @@ body {
 
 .chart:hover {
   opacity: 0.6;
+  transition: opacity ease 0.5s;
   cursor: pointer;
 }
 
