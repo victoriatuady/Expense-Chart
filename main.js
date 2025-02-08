@@ -1,7 +1,7 @@
 const charts = document.querySelectorAll(".chart");
 const texts = document.querySelectorAll(".chart-hover p");
 
-// Code to fecth json file and display text on page
+// Code to fetch json file and display text on page
 function displayText() {
   fetch("./assets/data.json")
     .then((response) => response.json())
